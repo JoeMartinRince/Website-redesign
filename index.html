@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikipedia - The Free Encyclopedia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Wikipedia</h1>
+        <p>The Free Encyclopedia</p>
+    </header>
+
+    <main>
+        <div class="search-box">
+            <input type="text" id="search" placeholder="Search Wikipedia...">
+            <button onclick="searchWiki()">🔍</button>
+        </div>
+
+        <section class="languages">
+            <p>Select your language:</p>
+            <div class="lang-list">
+                <a href="#">English</a>
+                <a href="#">Español</a>
+                <a href="#">Français</a>
+                <a href="#">Deutsch</a>
+                <a href="#">中文</a>
+                <a href="#">العربية</a>
+                <a href="#">Русский</a>
+                <a href="#">हिन्दी</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Wikipedia is hosted by the Wikimedia Foundation</p>
+    </footer>
+
+    <script>
+        function searchWiki() {
+            let query = document.getElementById("search").value;
+            if(query) {
+                window.location.href = `https://en.wikipedia.org/wiki/Special:Search?search=${query}`;
+            }
+        }
+    </script>
+
+</body>
+</html>
