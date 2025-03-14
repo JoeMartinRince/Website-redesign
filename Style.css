@@ -1,0 +1,88 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #202122;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #54595d;
+}
+
+.search-box {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-box input {
+    width: 60%;
+    max-width: 500px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #a2a9b1;
+    border-radius: 5px;
+    outline: none;
+}
+
+.search-box button {
+    padding: 10px;
+    background-color: #36c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.search-box button:hover {
+    background-color: #2a4b8d;
+}
+
+.languages p {
+    font-size: 1.2rem;
+    margin: 20px 0 10px;
+    color: #54595d;
+}
+
+.lang-list {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.lang-list a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #36c;
+    font-weight: 600;
+}
+
+.lang-list a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    margin-top: 50px;
+    font-size: 0.9rem;
+    color: #54595d;
+}
